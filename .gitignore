@@ -93,4 +93,4 @@ typings/
 .idea/
 
 # Build folder
-public/
+dist/

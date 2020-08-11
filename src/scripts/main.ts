@@ -27,7 +27,7 @@ function getWaveRadius(x: number, y: number) {
 
 function handlePointerDown(ev: PointerEvent) {
     ev.preventDefault();
-    pop(ev.pageX, ev.pageY);
+    pop(ev.clientX, ev.clientY);
 }
 
 function pop(eventX: number, eventY: number) {
@@ -131,10 +131,12 @@ function startFauxClickTimer() {
 }
 
 function fauxClick() {
+    console.log("Howdy");
     if (noInteraction) {
-        let click = new MouseEvent("mousedown", {
+        console.log("Bitch");
+        let click = new PointerEvent("pointerdown", {
             clientX: window.innerWidth * 0.5,
-            clientY: window.innerHeight & 0.2,
+            clientY: window.innerHeight * 0.2,
         });
         canvas.dispatchEvent(click);
     }
