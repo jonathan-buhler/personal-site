@@ -32,6 +32,11 @@
         "quoteProps": "consistent",
         "printWidth": 120
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn pretty-quick --staged"
+        }
+    },
     "browserslist": [
         "last 1 Chrome versions"
     ]
