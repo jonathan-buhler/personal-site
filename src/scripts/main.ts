@@ -131,9 +131,7 @@ function startFauxClickTimer() {
 }
 
 function fauxClick() {
-    console.log("Howdy");
     if (noInteraction) {
-        console.log("Bitch");
         let click = new PointerEvent("pointerdown", {
             clientX: window.innerWidth * 0.5,
             clientY: window.innerHeight * 0.2,
