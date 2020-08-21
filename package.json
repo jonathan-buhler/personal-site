@@ -8,7 +8,7 @@
     "license": "GPL-3.0",
     "private": true,
     "dependencies": {
-        "@types/animejs": "^3.1.0",
+        "@types/animejs": "^3.1.2",
         "@types/lodash": "^4.14.150",
         "animejs": "^3.1.0",
         "lodash": "^4.17.20"
