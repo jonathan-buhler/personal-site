@@ -14,7 +14,7 @@
         "lodash": "^4.17.20"
     },
     "devDependencies": {
-        "husky": "^4.2.3",
+        "husky": "^4.3.0",
         "parcel": "^1.12.4",
         "prettier": "^2.1.1",
         "pretty-quick": "^3.0.0",
