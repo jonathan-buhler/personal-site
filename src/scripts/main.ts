@@ -127,7 +127,7 @@ function addListeners() {
 }
 
 function startFauxClickTimer() {
-    setTimeout(fauxClick, 2500);
+    setTimeout(fauxClick, 750);
 }
 
 function fauxClick() {
