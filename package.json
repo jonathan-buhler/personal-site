@@ -23,8 +23,8 @@
     },
     "scripts": {
         "dev": "parcel serve index.html --out-dir public",
-        "format": "prettier .",
-        "build": "parcel build index.html --out-dir public"
+        "build": "parcel build index.html --out-dir public",
+        "format": "pretty-quick"
     },
     "prettier": {
         "tabWidth": 4,
