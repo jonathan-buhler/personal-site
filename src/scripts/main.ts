@@ -141,7 +141,7 @@ function fauxClick() {
 }
 
 function plea() {
-    console.log("please hire me...");
+    console.log("please hire me");
 }
 
 function init() {
