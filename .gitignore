@@ -86,10 +86,10 @@ typings/
 # .Ds_Store
 .DS_Store
 
-# VSCode
+# Visual Studio Code
 .vscode/
 
-# Idea
+# JetBrains
 .idea/
 
 # Build folders
