@@ -1,8 +1,8 @@
 {
     "name": "personal-site",
     "version": "1.0.0",
-    "description": "Buhler, not Bueller",
-    "main": "index.html",
+    "description": "The source code for my personal site",
+    "main": "./src/index.html",
     "repository": "git@github.com:jonathanBuhler/personalSite",
     "author": "Jonathan Buhler <benedict.buhler@gmail.com>",
     "license": "GPL-3.0",
