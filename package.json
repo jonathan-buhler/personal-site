@@ -12,7 +12,7 @@
         "animejs": "^3.2.1"
     },
     "devDependencies": {
-        "husky": "^4.3.7",
+        "husky": "^4.3.8",
         "parcel": "^1.12.4",
         "prettier": "^2.2.1",
         "pretty-quick": "^3.1.0",
