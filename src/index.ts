@@ -1,8 +1,6 @@
 import anime from "animejs";
 
-let canvas: HTMLCanvasElement = document.getElementById(
-    "c"
-) as HTMLCanvasElement;
+let canvas: HTMLCanvasElement = document.getElementById("c") as HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D = canvas.getContext("2d")!;
 
 let colors = ["#ec7263", "#a75265", "#57385c"];
@@ -72,16 +70,12 @@ function pop(eventX: number, eventY: number) {
 
     let particles: Circle[] = [];
     for (let _ = 0; _ < 30; _++) {
-        particles.push(
-            new Circle(eventX, eventY, anime.random(24, 36), oldColor)
-        );
+        particles.push(new Circle(eventX, eventY, anime.random(24, 36), oldColor));
     }
     anime({
         targets: particles,
-        x: (particle: Circle) =>
-            particle.x + anime.random(-rippleSize, rippleSize),
-        y: (particle: Circle) =>
-            particle.y + anime.random(-rippleSize * 1.15, rippleSize * 1.15),
+        x: (particle: Circle) => particle.x + anime.random(-rippleSize, rippleSize),
+        y: (particle: Circle) => particle.y + anime.random(-rippleSize * 1.15, rippleSize * 1.15),
         r: 0,
         easing: "easeOutExpo",
         duration: anime.random(1000, 1300),
@@ -93,12 +87,7 @@ function pop(eventX: number, eventY: number) {
 
 class Circle {
     opacity: number;
-    constructor(
-        public x: number,
-        public y: number,
-        public r: number,
-        public fill: string
-    ) {
+    constructor(public x: number, public y: number, public r: number, public fill: string) {
         this.opacity = 1;
         this.draw();
     }
@@ -129,11 +118,9 @@ function paintBackground() {
 function addListeners() {
     window.addEventListener("resize", resizeCanvas);
 
-    document
-        .querySelector("#main-container")!
-        .addEventListener("click", function (ev) {
-            ev.stopPropagation();
-        });
+    document.querySelector("#main-container")!.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+    });
 
     canvas.addEventListener("pointerdown", handlePointerDown);
 }

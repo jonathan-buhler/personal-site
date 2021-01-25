@@ -1,3 +1,6 @@
+# Visual Studio Code
+.vscode/
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
