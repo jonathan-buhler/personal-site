@@ -10,7 +10,7 @@
     "scripts": {
         "dev": "parcel serve ./src/index.html --out-dir public",
         "build": "parcel build ./src/index.html --out-dir public",
-        "format": "prettier . --write"
+        "format": "prettier . --write --ignore-path .gitignore"
     },
     "dependencies": {
         "@types/animejs": "^3.1.2",

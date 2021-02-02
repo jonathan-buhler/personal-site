@@ -1,6 +1,6 @@
 import anime from "animejs";
 
-let canvas: HTMLCanvasElement = document.getElementById("c") as HTMLCanvasElement;
+let canvas: HTMLCanvasElement = document.getElementById("canvas") as HTMLCanvasElement;
 let ctx: CanvasRenderingContext2D = canvas.getContext("2d")!;
 
 let colors = ["#ec7263", "#a75265", "#57385c"];
