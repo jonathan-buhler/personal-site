@@ -5,6 +5,14 @@ $burgundy: #a75265;
 $orange: #ec7263;
 $yellow: #febe7e;
 
+$screen-large-min: 992px;
+
+@mixin on-small {
+    @media (max-width: #{$screen-large-min}) {
+        @content;
+    }
+}
+
 body,
 html,
 canvas {
@@ -25,6 +33,10 @@ canvas {
     height: fit-content;
     width: 55rem;
 
+    @include on-small() {
+        width: 20rem;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,6 +54,11 @@ canvas {
 #name {
     font-family: "Oswald", sans-serif;
     font-size: 5rem;
+
+    @include on-small() {
+        font-size: 2rem;
+        top: -2rem;
+    }
 
     padding: 0.5rem;
     top: -2.5rem;
@@ -66,6 +83,10 @@ canvas {
 
     fill: $purple;
     border: 0.25rem solid $purple;
+
+    @include on-small() {
+        width: 1.5rem;
+    }
 
     transition: all 0.15s;
 }
