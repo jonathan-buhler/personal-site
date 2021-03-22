@@ -139,16 +139,11 @@ function fauxClick() {
     }
 }
 
-function plea() {
-    console.log("please hire me");
-}
-
 function init() {
     resizeCanvas();
     paintBackground();
     addListeners();
     startFauxClickTimer();
-    plea();
 }
 
 window.onload = init;
