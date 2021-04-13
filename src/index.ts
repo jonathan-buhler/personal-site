@@ -125,11 +125,11 @@ function addListeners() {
     canvas.addEventListener("pointerdown", handlePointerDown);
 }
 
-function startFauxClickTimer() {
-    setTimeout(fauxClick, 750);
+function startFakeClickTimer() {
+    setTimeout(fakeClick, 750);
 }
 
-function fauxClick() {
+function fakeClick() {
     if (noInteraction) {
         let click = new PointerEvent("pointerdown", {
             clientX: window.innerWidth * 0.5,
@@ -143,7 +143,7 @@ function init() {
     resizeCanvas();
     paintBackground();
     addListeners();
-    startFauxClickTimer();
+    startFakeClickTimer();
 }
 
 window.onload = init;

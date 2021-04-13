@@ -83,14 +83,11 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-# .Ds_Store
+# MacOS
 .DS_Store
 
-# Visual Studio Code
+# VSCode
 .vscode/
 
-# JetBrains
-.idea/
-
-# Build folders
-public/
+# Build folder
+dist/
