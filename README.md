@@ -1,4 +1,4 @@
-# personalSite
+# personal-site
 
 ### Welcome to the source code for my personal site!
 
