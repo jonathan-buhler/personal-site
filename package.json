@@ -16,7 +16,7 @@
     "dependencies": {
         "@types/animejs": "^3.1.5",
         "animejs": "^3.2.1",
-        "vite": "^3.0.9"
+        "vite": "^3.1.4"
     },
     "devDependencies": {
         "prettier": "^2.6.1",
