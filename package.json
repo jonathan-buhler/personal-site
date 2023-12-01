@@ -21,7 +21,7 @@
     "devDependencies": {
         "prettier": "^3.0.3",
         "sass": "^1.66.1",
-        "typescript": "^5.2.2"
+        "typescript": "^5.3.2"
     },
     "prettier": {
         "tabWidth": 4,
